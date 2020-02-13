@@ -50,6 +50,8 @@
 	<script src="js/respond.min.js"></script>
 	<![endif]-->
 
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+		
 	</head>
 	<body>
 		
@@ -127,10 +129,19 @@
 							<li class="has-dropdown">
 								<a href="#">Dropdown</a>
 								<ul class="dropdown">
-									<li><a href="#">HTML5</a></li>
-									<li><a href="#">CSS3</a></li>
-									<li><a href="#">Sass</a></li>
-									<li><a href="#">jQuery</a></li>
+									<li><a href="#">HTML5</a>
+										 <ul class="dropdown-menu">
+										  <li><a tabindex="-1" href="#">2nd level dropdown</a></li>
+										  <li><a tabindex="-1" href="#">2nd level dropdown</a></li>
+										  <li class="dropdown-submenu">
+										    <a class="test" href="#">Another dropdown <span class="caret"></span></a>
+										    <ul class="dropdown-menu">
+										      <li><a href="#">3rd level dropdown</a></li>
+										      <li><a href="#">3rd level dropdown</a></li>
+										    </ul>
+										  </li>
+										</ul>
+									</li>
 								</ul>
 							</li>
 							<li><a href="portfolio.html">Portfolio</a></li>
